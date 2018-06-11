@@ -1,0 +1,12 @@
+rootProject.name = 'TransSpeech'
+
+include ':app'
+
+include ':react-native-navigation'
+project(':react-native-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navigation/lib/android/app/')
+include ':lottie-react-native'
+project(':lottie-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/lottie-react-native/src/android')
+include ':autocompletetextview' // Add this
+project(':autocompletetextview').projectDir = file("../node_modules/autocompletetextview/android") // Add this
+include ':react-native-dialogs' // Add this
+project(':react-native-dialogs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-dialogs/android') // Add this
